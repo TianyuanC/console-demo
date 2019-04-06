@@ -1,28 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import { makeCoffee, consoles, color, timing } from "./console";
 
-class App extends Component {
-  render() {
+export default () => {
+    useEffect(() => {
+        console.log("Hey World");
+
+        // color();
+
+        // makeCoffee();
+
+        // consoles();
+
+        // timing();
+    }, []);
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div className="App">
+            <header className="App-header">
+                <code>Console.log demo</code>
+                <p>Open your Dev Console</p>
+            </header>
+        </div>
     );
-  }
-}
-
-export default App;
+};
