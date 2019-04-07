@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { makeCoffee, consoles, color, timing } from "./console";
+import { normal, color, grouping, various, timing } from "./console";
 
 export default () => {
     useEffect(() => {
-        console.log("Hey World");
-
-        // color();
-
-        // makeCoffee();
-
-        // consoles();
-
-        // timing();
+        normal();
+        color();
+        grouping();
+        various();
+        timing();
+        // and more...
     }, []);
 
     return (
         <div className="App">
             <header className="App-header">
                 <code>Console.log demo</code>
-                <p>Open your Dev Console</p>
+                <p>
+                    Where are you staring at? <br />
+                    Open your dev console now 🤣
+                </p>
             </header>
         </div>
     );

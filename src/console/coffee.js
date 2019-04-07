@@ -9,11 +9,15 @@ const brew = () => {
     console.groupEnd();
 };
 
-export const makeCoffee = () => {
+const makeCoffee = () => {
     console.group();
     console.log("Sleepy...");
     grindBeans();
     brew();
     console.groupEnd();
     console.log("Yay");
+};
+
+export const grouping = () => {
+    makeCoffee();
 };

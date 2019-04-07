@@ -1,6 +1,9 @@
 export * from "./coffee";
 export * from "./various";
-export * from "./art";
+
+export const normal = () => {
+    console.log("Hey World");
+};
 
 export const color = () => {
     console.log(
